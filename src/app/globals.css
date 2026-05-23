@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #16a34a #f1f5f9;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer components {
+    .section-padding {
+        padding: 5rem 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .section-padding {
+            padding: 6rem 2rem;
+        }
+    }
+}
